@@ -7,6 +7,8 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
 import { SidemenuComponent } from './sidemenu/sidemenu.component';
 import { SidemenuItemComponent } from './sidemenu-item/sidemenu-item.component';
 import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
+import { EngagementTypeModule } from '../engagement-type/engagement-type.module';
+import { InkBarModule } from '../ink-bar/ink-bar.module';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,8 @@ import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
     MatChipsModule,
     MatListModule,
     PerfectScrollbarModule,
+    EngagementTypeModule,
+    InkBarModule,
   ]
 })
 export class DashboardModule { }

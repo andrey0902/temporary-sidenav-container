@@ -30,10 +30,47 @@
 
         <router-outlet></router-outlet>
 
+<!--        InkLisenerDirective-->
+        <app-ink-bar [triangle]="true">
+          <app-engagement-type #host [appInkHost]="host"></app-engagement-type>
+        </app-ink-bar>
+
+        <app-ink-bar [border]="true" [triangle]="true">
+          <app-engagement-type #host2 [appInkHost]="host2"></app-engagement-type>
+        </app-ink-bar>
+
+        <app-ink-bar [border]="true">
+          <app-engagement-type #host3 [appInkHost]="host3"></app-engagement-type>
+        </app-ink-bar>
+
+        <app-ink-bar>
+          <app-engagement-type #host4 [appInkHost]="host4"></app-engagement-type>
+        </app-ink-bar>
+
+        <app-ink-bar [border]="true">
+          <div class="wrap">
+            <div appInkListener class="btn-item" style="width: 50px; height: 50px;"
+            >
+              button1
+            </div>
+            <div appInkListener class="btn-item" style="width: 50px; height: 50px;"
+          >
+            button2
+          </div>
+            <div appInkListener class="btn-item" style="width: 50px; height: 50px;"
+          >
+            button3
+          </div>
+            <div appInkListener class="btn-item" style="width: 50px; height: 50px;"
+          >
+            button4
+          </div>
+          </div>
+        </app-ink-bar>
+
       </mat-drawer-content>
     </mat-drawer-container>
   </mat-sidenav-content>
-
 
   <mat-sidenav #sidenav2 position="end" mode="over">
 <!--    <cdk-sidebar></cdk-sidebar>-->

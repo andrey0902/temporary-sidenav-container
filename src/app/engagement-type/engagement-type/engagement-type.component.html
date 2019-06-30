@@ -1,0 +1,10 @@
+<div class="wrap">
+  <app-type-item *ngFor="let typeButton of typeList; let i = index;"
+                   [typeButton]="typeButton"
+                   [checkedType]="selectedType"
+                   (selectType)="setTypeEngagement($event, i)"
+                   appInkListener
+  ></app-type-item>
+<!--  <mat-ink-bar class="mat-ink-bar"></mat-ink-bar>-->
+<!--  <mat-triangle-bar class="mat-triangle-bar"></mat-triangle-bar>-->
+</div>
