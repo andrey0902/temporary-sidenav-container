@@ -24,5 +24,5 @@ script:
 
 deploy:
   provider: heroku
-  api_key: wdKJFsqka41KgjbX99ULug
+  api_key: 815db91b-eee8-4aa9-bf1b-8c8d234c596f
   app: side-nav
